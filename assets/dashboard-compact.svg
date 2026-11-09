@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="752" viewBox="0 0 380 752" role="img" aria-labelledby="title description">
+<title id="title">GitHub dashboard for Yoshioka1311</title>
+<desc id="description">114 profile-visible contributions, 108 indexed public commits, 7 owned public repositories, and 0 stars earned. Through 09 Nov 2026.</desc>
+<rect x=".5" y=".5" width="379" height="751" rx="17" fill="#0F172A" stroke="#354364"/>
+<defs><linearGradient id="activity-fill" x2="0" y2="1"><stop stop-color="#7C3AED" stop-opacity=".48"/><stop offset="1" stop-color="#7C3AED" stop-opacity=".04"/></linearGradient></defs>
+<rect x="18" y="20" width="27" height="27" rx="8" fill="#242042" stroke="#4C3E78"/>
+<path d="M25 34V40M31.5 28V40M38 31V40" stroke="#C4B5FD" stroke-width="2.3" stroke-linecap="round"/>
+<text x="55" y="34" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="20" font-weight="680" fill="#E2E8F0" text-anchor="start">GitHub dashboard</text>
+<text x="55" y="52" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#A8B4CA" text-anchor="start">@Yoshioka1311</text>
+<rect x="244" y="25" width="118" height="23" rx="10" fill="#151D33" stroke="#35425F"/>
+<circle cx="255" cy="36.5" r="3" fill="#A78BFA"/>
+<text x="306" y="40" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#C4B5FD" text-anchor="middle">09 Nov 2026</text>
+<path d="M18 63H362" stroke="#2B3854"/>
+<rect x="18.0" y="76" width="167.0" height="84" rx="12" fill="#101A30" stroke="#283650"/>
+<text x="31.0" y="97" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="12" font-weight="550" fill="#C4B5FD" text-anchor="start">Contributions</text>
+<text x="31.0" y="131" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="29" font-weight="680" fill="#E2E8F0" text-anchor="start">114</text>
+<text x="31.0" y="149" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="start">Last year</text>
+<rect x="146.0" y="106" width="27" height="27" rx="8" fill="#211E3C"/>
+<path d="M2 12H6L9 5L12 16L15 9H20" transform="translate(149.5 109.5)" fill="none" stroke="#A78BFA" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="195.0" y="76" width="167.0" height="84" rx="12" fill="#101A30" stroke="#283650"/>
+<text x="208.0" y="97" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="12" font-weight="550" fill="#C4B5FD" text-anchor="start">Public commits</text>
+<text x="208.0" y="131" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="29" font-weight="680" fill="#E2E8F0" text-anchor="start">108</text>
+<text x="208.0" y="149" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="start">Last 365 days</text>
+<rect x="323.0" y="106" width="27" height="27" rx="8" fill="#211E3C"/>
+<path d="M1 10H6M14 10H19M10 6A4 4 0 1 0 10 14A4 4 0 1 0 10 6" transform="translate(326.5 109.5)" fill="none" stroke="#A78BFA" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="18.0" y="170" width="167.0" height="84" rx="12" fill="#101A30" stroke="#283650"/>
+<text x="31.0" y="191" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="12" font-weight="550" fill="#C4B5FD" text-anchor="start">Public repositories</text>
+<text x="31.0" y="225" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="29" font-weight="680" fill="#E2E8F0" text-anchor="start">7</text>
+<text x="31.0" y="243" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="start">Owned repositories</text>
+<rect x="146.0" y="200" width="27" height="27" rx="8" fill="#211E3C"/>
+<path d="M4 3H16V17H4ZM7 3V17M9 7H13M9 10H13" transform="translate(149.5 203.5)" fill="none" stroke="#A78BFA" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="195.0" y="170" width="167.0" height="84" rx="12" fill="#101A30" stroke="#283650"/>
+<text x="208.0" y="191" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="12" font-weight="550" fill="#C4B5FD" text-anchor="start">Stars earned</text>
+<text x="208.0" y="225" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="29" font-weight="680" fill="#E2E8F0" text-anchor="start">0</text>
+<text x="208.0" y="243" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="start">Across public repos</text>
+<rect x="323.0" y="200" width="27" height="27" rx="8" fill="#211E3C"/>
+<path d="M10 2L12.4 7.1L18 7.8L14 11.8L15 17.4L10 14.7L5 17.4L6 11.8L2 7.8L7.6 7.1Z" transform="translate(326.5 203.5)" fill="none" stroke="#A78BFA" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="18" y="266" width="344" height="219" rx="12" fill="#0B1428" stroke="#283650"/>
+<text x="33" y="293" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="17" font-weight="650" fill="#E2E8F0" text-anchor="start">Contribution activity</text>
+<text x="33" y="313" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#A8B4CA" text-anchor="start">Monthly totals from the public profile</text>
+<path d="M61 451.0H337" stroke="#293752" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="53" y="455.0" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#A8B4CA" text-anchor="end">0</text>
+<path d="M61 397.0H337" stroke="#293752" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="53" y="401.0" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#A8B4CA" text-anchor="end">25</text>
+<path d="M61 343.0H337" stroke="#293752" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="53" y="347.0" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#A8B4CA" text-anchor="end">50</text>
+<path d="M61.00 451.00 C72.50 451.00 72.50 451.00 84.00 451.00 C95.50 451.00 95.50 451.00 107.00 451.00 C118.50 451.00 118.50 451.00 130.00 451.00 C141.50 451.00 141.50 451.00 153.00 451.00 C164.50 451.00 164.50 451.00 176.00 451.00 C187.50 451.00 187.50 448.84 199.00 448.84 C210.50 448.84 210.50 451.00 222.00 451.00 C233.50 451.00 233.50 438.04 245.00 438.04 C256.50 438.04 256.50 401.32 268.00 401.32 C279.50 401.32 279.50 362.44 291.00 362.44 C302.50 362.44 302.50 373.24 314.00 373.24 C325.50 373.24 325.50 435.88 337.00 435.88 L337.00 451.00 H61.00 Z" fill="url(#activity-fill)"/>
+<path d="M61.00 451.00 C72.50 451.00 72.50 451.00 84.00 451.00 C95.50 451.00 95.50 451.00 107.00 451.00 C118.50 451.00 118.50 451.00 130.00 451.00 C141.50 451.00 141.50 451.00 153.00 451.00 C164.50 451.00 164.50 451.00 176.00 451.00 C187.50 451.00 187.50 448.84 199.00 448.84 C210.50 448.84 210.50 451.00 222.00 451.00 C233.50 451.00 233.50 438.04 245.00 438.04 C256.50 438.04 256.50 401.32 268.00 401.32 C279.50 401.32 279.50 362.44 291.00 362.44 C302.50 362.44 302.50 373.24 314.00 373.24 C325.50 373.24 325.50 435.88 337.00 435.88" fill="none" stroke="#A78BFA" stroke-width="2.3" stroke-linecap="round"/>
+<circle cx="61.00" cy="451.00" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2025-11: 0</title></circle>
+<text x="61.0" y="471" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="middle">Nov ’25</text>
+<circle cx="84.00" cy="451.00" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2025-12: 0</title></circle>
+<circle cx="107.00" cy="451.00" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-01: 0</title></circle>
+<circle cx="130.00" cy="451.00" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-02: 0</title></circle>
+<text x="130.0" y="471" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="middle">Feb</text>
+<circle cx="153.00" cy="451.00" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-03: 0</title></circle>
+<circle cx="176.00" cy="451.00" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-04: 0</title></circle>
+<circle cx="199.00" cy="448.84" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-05: 1</title></circle>
+<text x="199.0" y="471" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="middle">May</text>
+<circle cx="222.00" cy="451.00" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-06: 0</title></circle>
+<circle cx="245.00" cy="438.04" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-07: 6</title></circle>
+<circle cx="268.00" cy="401.32" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-08: 23</title></circle>
+<text x="268.0" y="471" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="middle">Aug</text>
+<circle cx="291.00" cy="362.44" r="4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-09: 41</title></circle>
+<circle cx="314.00" cy="373.24" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-10: 36</title></circle>
+<circle cx="337.00" cy="435.88" r="2.4" fill="#C4B5FD" stroke="#36286A" stroke-width="1"><title>2026-11: 7</title></circle>
+<text x="337.0" y="471" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#A8B4CA" text-anchor="middle">Nov ’26</text>
+<rect x="256.0" y="334.44" width="70" height="19" rx="5" fill="#211C3E" stroke="#544488"/>
+<text x="291.0" y="347.44" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#C4B5FD" text-anchor="middle">Sep · 41</text>
+<rect x="18" y="495" width="344" height="219" rx="12" fill="#0B1428" stroke="#283650"/>
+<text x="33" y="522" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="17" font-weight="650" fill="#E2E8F0" text-anchor="start">Language distribution</text>
+<text x="33" y="542" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#A8B4CA" text-anchor="start">Code bytes in public non-fork repos</text>
+<circle cx="86" cy="628" r="40" fill="#101A30" stroke="#263652" stroke-width="11"/>
+<circle cx="86" cy="628" r="40" fill="none" stroke="#A78BFA" stroke-width="11" stroke-dasharray="239.9332 11.3942" stroke-dashoffset="-0.0000" transform="rotate(-90 86 628)"><title>HTML: 32,503,369 bytes</title></circle>
+<circle cx="150" cy="580" r="3.5" fill="#A78BFA"/>
+<text x="160" y="584" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="550" fill="#E2E8F0" text-anchor="start">HTML</text>
+<text x="347" y="584" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#C4B5FD" text-anchor="end">95.5%</text>
+<circle cx="86" cy="628" r="40" fill="none" stroke="#7C3AED" stroke-width="11" stroke-dasharray="8.2687 243.0587" stroke-dashoffset="-239.9332" transform="rotate(-90 86 628)"><title>TypeScript: 1,120,153 bytes</title></circle>
+<circle cx="150" cy="602" r="3.5" fill="#7C3AED"/>
+<text x="160" y="606" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="550" fill="#E2E8F0" text-anchor="start">TypeScript</text>
+<text x="347" y="606" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#C4B5FD" text-anchor="end">3.3%</text>
+<circle cx="86" cy="628" r="40" fill="none" stroke="#7DD3FC" stroke-width="11" stroke-dasharray="3.1186 248.2088" stroke-dashoffset="-248.2020" transform="rotate(-90 86 628)"><title>JavaScript: 422,470 bytes</title></circle>
+<circle cx="150" cy="624" r="3.5" fill="#7DD3FC"/>
+<text x="160" y="628" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="550" fill="#E2E8F0" text-anchor="start">JavaScript</text>
+<text x="347" y="628" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#C4B5FD" text-anchor="end">1.2%</text>
+<circle cx="86" cy="628" r="40" fill="none" stroke="#646CF2" stroke-width="11" stroke-dasharray="0.0068 251.3206" stroke-dashoffset="-251.3206" transform="rotate(-90 86 628)"><title>CSS: 927 bytes</title></circle>
+<circle cx="150" cy="646" r="3.5" fill="#646CF2"/>
+<text x="160" y="650" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="550" fill="#E2E8F0" text-anchor="start">CSS</text>
+<text x="347" y="650" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#C4B5FD" text-anchor="end">&lt;0.1%</text>
+<text x="86" y="631" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="19" font-weight="660" fill="#E2E8F0" text-anchor="middle">95.5%</text>
+<text x="86" y="647" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#A8B4CA" text-anchor="middle">HTML</text>
+<text x="18" y="737" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#A8B4CA" text-anchor="start">GitHub public data</text>
+<text x="362" y="737" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#A8B4CA" text-anchor="end">Daily refresh</text>
+</svg>
