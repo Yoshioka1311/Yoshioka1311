@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
-<title>Boss | GitHub activity</title>
+<title>Boss | GitHub dashboard</title>
 <style>
   :root {
     color-scheme: dark;
@@ -79,6 +79,26 @@
   .day-controls button:hover:enabled { border-color: var(--accent); }
   .day-controls button:disabled { opacity: .45; cursor: default; }
   .source { margin-top: 8px; }
+  .repo-overview { margin-top: 20px; border-top: 1px solid var(--line); }
+  .metrics {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px; margin: 0; padding-block: 14px; border-bottom: 1px solid var(--line);
+  }
+  .metrics div { display: flex; flex-direction: column-reverse; gap: 2px; }
+  .metrics dt { color: var(--muted); font-size: .8rem; }
+  .metrics dd { margin: 0; font-size: 1.2rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .languages { padding-block: 15px 4px; }
+  h3 { margin: 0 0 8px; font-size: 1rem; }
+  .language-bar { display: flex; height: 8px; overflow: hidden; border-radius: 2px; }
+  .language-options { display: flex; flex-wrap: wrap; gap: 4px 8px; margin-top: 6px; }
+  .language-options button {
+    display: inline-flex; align-items: center; gap: 5px; min-height: 38px;
+    padding: 0 7px; background: transparent; border: 1px solid transparent;
+    border-radius: 4px; font-size: .82rem;
+  }
+  .language-options button:hover, .language-options button[aria-pressed="true"] { border-color: var(--line); }
+  .language-options i { width: 8px; height: 8px; border-radius: 50%; }
+  .language-detail { font-variant-numeric: tabular-nums; }
   @media (prefers-reduced-motion: reduce) {
     .cell[data-active="true"] { animation: none; }
   }
@@ -101,7 +121,7 @@
   <section aria-labelledby="activity-title">
     <div class="chart-header">
       <div>
-        <h2 id="activity-title">GitHub activity</h2>
+        <h2 id="activity-title">GitHub dashboard</h2>
         <p id="range-total"></p>
       </div>
       <div class="range" role="group" aria-label="Date range" hidden>
@@ -128,6 +148,21 @@
       <a id="github-month" href="https://github.com/Yoshioka1311?tab=overview">Open this month on GitHub</a>
     </div>
     <p class="source" id="source"></p>
+    <div class="repo-overview" hidden>
+      <dl class="metrics">
+        <div><dt>Public repos</dt><dd id="repositories"></dd></div>
+        <div><dt>Stars earned</dt><dd id="stars"></dd></div>
+        <div><dt>Public commits</dt><dd id="commits"></dd></div>
+      </dl>
+      <p class="source">Commit counts cover indexed public default branches over the past year.</p>
+      <div class="languages">
+        <h3>Repository languages</h3>
+        <div class="language-bar" aria-hidden="true"></div>
+        <div class="language-options" role="group" aria-label="Select a repository language"></div>
+        <p class="source language-detail" role="status"></p>
+        <p class="source">Shares are by code bytes in public non-fork repositories, excluding this profile.</p>
+      </div>
+    </div>
     <noscript><p><a href="https://github.com/Yoshioka1311?tab=overview">View the contribution calendar on GitHub</a></p></noscript>
   </section>
 </main>
@@ -135,7 +170,7 @@
 <script type="module">
   const snapshot = JSON.parse(document.querySelector('#activity-data').textContent);
   const { login, colors } = snapshot;
-  let { days } = snapshot;
+  let { days, summary } = snapshot;
   if (location.protocol === 'https:' && location.hostname === `${login.toLowerCase()}.github.io`) {
     // A refresh commit made by GitHub Actions may not rebuild the Pages site.
     try {
@@ -148,6 +183,7 @@
               /^\d{4}-\d{2}-\d{2}$/.test(day) && Number.isInteger(count) && count >= 0 &&
               Number.isInteger(level) && level >= 0 && level < colors.length)) {
           days = fresh.days;
+          summary = fresh.summary ?? summary;
         }
       }
     } catch {
@@ -243,6 +279,47 @@
     scroll.scrollLeft = scroll.scrollWidth;
   }
 
+  function renderRepositoryOverview() {
+    const overview = document.querySelector('.repo-overview');
+    if (!summary) {
+      overview.hidden = true;
+      return;
+    }
+    for (const key of ['repositories', 'stars', 'commits']) {
+      document.getElementById(key).textContent = summary[key].toLocaleString('en');
+    }
+    const totalBytes = summary.languages.reduce((sum, language) => sum + language.bytes, 0);
+    const detail = document.querySelector('.language-detail');
+    if (!totalBytes) {
+      detail.textContent = 'No language data for public repositories.';
+      return;
+    }
+    const bar = document.querySelector('.language-bar');
+    const options = document.querySelector('.language-options');
+    for (const language of summary.languages) {
+      const share = language.bytes / totalBytes * 100;
+      const segment = document.createElement('span');
+      segment.style.flexBasis = `${share}%`;
+      segment.style.backgroundColor = language.color;
+      bar.append(segment);
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.setAttribute('aria-pressed', 'false');
+      const dot = document.createElement('i');
+      dot.setAttribute('aria-hidden', 'true');
+      dot.style.backgroundColor = language.color;
+      const percentage = share < 0.1 ? '<0.1%' : `${share.toFixed(1)}%`;
+      button.append(dot, `${language.name} ${percentage}`);
+      button.addEventListener('click', () => {
+        options.querySelector('[aria-pressed="true"]')?.setAttribute('aria-pressed', 'false');
+        button.setAttribute('aria-pressed', 'true');
+        detail.textContent = `${language.name} accounts for ${language.bytes.toLocaleString('en')} code bytes.`;
+      });
+      options.append(button);
+    }
+    options.firstElementChild.click();
+  }
+
   grid.addEventListener('click', event => {
     const cell = event.target.closest('.cell');
     if (cell) select(Number(cell.dataset.index));
@@ -268,5 +345,6 @@
   document.querySelectorAll('[hidden]').forEach(element => { element.hidden = false; });
   document.querySelector('#source').textContent = `GitHub's public contribution calendar through ${dateFormat.format(utc(days.at(-1)[0]))}.`;
   render(matchMedia('(max-width: 620px)').matches ? '90' : 'year');
+  renderRepositoryOverview();
 </script>
 </html>
