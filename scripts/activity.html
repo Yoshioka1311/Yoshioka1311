@@ -132,8 +132,28 @@
   </section>
 </main>
 <script id="activity-data" type="application/json">{{ACTIVITY_DATA}}</script>
-<script>
-  const { login, days, colors } = JSON.parse(document.querySelector('#activity-data').textContent);
+<script type="module">
+  const snapshot = JSON.parse(document.querySelector('#activity-data').textContent);
+  const { login, colors } = snapshot;
+  let { days } = snapshot;
+  if (location.protocol === 'https:' && location.hostname === `${login.toLowerCase()}.github.io`) {
+    // A refresh commit made by GitHub Actions may not rebuild the Pages site.
+    try {
+      const url = `https://raw.githubusercontent.com/${login}/${login}/main/assets/activity.json`;
+      const response = await fetch(url, { signal: AbortSignal.timeout(2000) });
+      if (response.ok) {
+        const fresh = await response.json();
+        if (fresh.login === login && fresh.days?.length >= 360 && fresh.days.length <= 370 &&
+            fresh.days.at(-1)[0] >= days.at(-1)[0] && fresh.days.every(([day, count, level]) =>
+              /^\d{4}-\d{2}-\d{2}$/.test(day) && Number.isInteger(count) && count >= 0 &&
+              Number.isInteger(level) && level >= 0 && level < colors.length)) {
+          days = fresh.days;
+        }
+      }
+    } catch {
+      // The embedded calendar still works when GitHub's data endpoint is unavailable.
+    }
+  }
   const monthFormat = new Intl.DateTimeFormat('en', { month: 'short', timeZone: 'UTC' });
   const dateFormat = new Intl.DateTimeFormat('en', { dateStyle: 'long', timeZone: 'UTC' });
   const formatCount = count => `${count.toLocaleString('en')} contribution${count === 1 ? '' : 's'}`;

@@ -165,6 +165,7 @@ def main():
     outputs = {
         ROOT / "assets/activity.svg": annual,
         ROOT / "assets/activity-compact.svg": compact,
+        ROOT / "assets/activity.json": data + "\n",
         ROOT / "docs/index.html": template.replace("{{ACTIVITY_DATA}}", data),
     }
     for path, value in outputs.items():
