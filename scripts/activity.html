@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Boss | GitHub activity</title>
+<style>
+  :root {
+    color-scheme: dark;
+    font-family: system-ui, sans-serif;
+    background: #101214;
+    color: #f2f2f1;
+    --muted: #bdc3c8;
+    --line: #373c43;
+    --accent: #c4b5fd;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; }
+  main { width: min(100% - 40px, 920px); margin-inline: auto; }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; padding-block: 24px; border-bottom: 1px solid var(--line);
+  }
+  header a { font-size: .9rem; }
+  a { color: var(--accent); text-underline-offset: .25em; }
+  a:hover { color: #e5dbff; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .intro { padding-block: clamp(2rem, 7vw, 4.75rem) clamp(2rem, 5vw, 3.5rem); }
+  h1, h2, p { margin: 0; }
+  h1 { font-size: clamp(2.75rem, 7vw, 5.5rem); line-height: 1.04; letter-spacing: -.04em; }
+  h1 span { color: var(--accent); }
+  .intro p { margin-top: 1rem; max-width: 62ch; line-height: 1.6; text-wrap: pretty; color: var(--muted); }
+  .intro p + p { margin-top: .55rem; }
+  section { border-block: 1px solid var(--line); padding-block: 20px; margin-bottom: 36px; }
+  .chart-header { display: flex; justify-content: space-between; align-items: start; gap: 12px; flex-wrap: wrap; }
+  h2 { font-size: 1.45rem; letter-spacing: -.02em; text-wrap: balance; }
+  .hint, .source, #range-total { color: var(--muted); font-size: .875rem; line-height: 1.5; }
+  #range-total { margin-top: .3rem; }
+  .range { display: flex; gap: 6px; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  .range button {
+    border: 1px solid var(--line); background: transparent;
+    min-height: 44px; padding: 0 12px; border-radius: 6px; font-size: .875rem;
+  }
+  .range button:hover { border-color: var(--accent); }
+  .range button[aria-pressed="true"] { background: #272237; border-color: #716196; color: #e4daff; }
+  .chart-scroll { overflow-x: auto; margin-top: 14px; padding: 5px 4px 10px; }
+  .chart {
+    width: min(100%, calc(var(--weeks) * 24px));
+    min-width: calc(var(--weeks) * 16px);
+  }
+  .months, .days { display: grid; grid-template-columns: repeat(var(--weeks), minmax(0, 1fr)); gap: 4px; }
+  .months { margin-bottom: 5px; min-height: 1.3em; color: var(--muted); font-size: .75rem; }
+  .months span { white-space: nowrap; }
+  .cell {
+    background: var(--cell-color); border: 0; border-radius: 3px; padding: 0;
+    aspect-ratio: 1; min-width: 0;
+  }
+  .cell:hover, .cell[aria-pressed="true"] { outline: 1px solid #e3f9e8; outline-offset: 1px; z-index: 1; }
+  .cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; z-index: 2; }
+  .cell[data-active="true"] { animation: sweep 700ms cubic-bezier(.22,1,.36,1) var(--delay) both; }
+  @keyframes sweep { 34% { background-color: #b5ffd0; } }
+  .caption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-block: 6px 16px; }
+  .legend { display: flex; align-items: center; gap: 4px; color: var(--muted); font-size: .75rem; }
+  .legend span { width: 11px; height: 11px; border-radius: 2px; }
+  .selection {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px;
+    align-items: center; padding: 12px 0; border-top: 1px solid var(--line);
+  }
+  .selection time { display: block; color: var(--muted); font-size: .82rem; }
+  .selection strong { display: block; margin-top: 2px; font-size: 1rem; }
+  .selection a { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; }
+  .day-controls { display: flex; align-items: center; gap: 5px; }
+  .day-controls button {
+    width: 44px; height: 44px; border-radius: 6px;
+    border: 1px solid var(--line); background: transparent;
+  }
+  .day-controls button:hover:enabled { border-color: var(--accent); }
+  .day-controls button:disabled { opacity: .45; cursor: default; }
+  .source { margin-top: 8px; }
+  @media (prefers-reduced-motion: reduce) {
+    .cell[data-active="true"] { animation: none; }
+  }
+  @media (max-width: 420px) {
+    main { width: calc(100% - 28px); }
+    header { padding-block: 16px; }
+    .chart-header { gap: 8px; }
+  }
+</style>
+<main>
+  <header>
+    <strong>Boss</strong>
+    <a href="https://github.com/Yoshioka1311">@Yoshioka1311 on GitHub</a>
+  </header>
+  <div class="intro">
+    <h1>Hi, I'm <span>Boss.</span></h1>
+    <p>I study Digital Science and Technology at Mahidol University. I'm drawn to computer vision because I like finding out what a model can learn from an image and where it gets things wrong.</p>
+    <p>I want to work as an AI engineer, testing models on real data and building software people can use.</p>
+  </div>
+  <section aria-labelledby="activity-title">
+    <div class="chart-header">
+      <div>
+        <h2 id="activity-title">GitHub activity</h2>
+        <p id="range-total"></p>
+      </div>
+      <div class="range" role="group" aria-label="Date range" hidden>
+        <button type="button" data-range="90" aria-pressed="false">90 days</button>
+        <button type="button" data-range="year" aria-pressed="false">Past year</button>
+      </div>
+    </div>
+    <div class="chart-scroll" hidden>
+      <div class="chart">
+        <div class="months" aria-hidden="true"></div>
+        <div class="days" role="group" aria-label="Contribution calendar" aria-describedby="chart-hint"></div>
+      </div>
+    </div>
+    <div class="caption" hidden>
+      <p class="hint" id="chart-hint">Select a square to see that day. Use arrow keys to move.</p>
+      <div class="legend" aria-label="Less to more activity">Less</div>
+    </div>
+    <div class="selection" hidden>
+      <div class="day-controls">
+        <button type="button" id="previous-day" aria-label="Previous day">‹</button>
+        <button type="button" id="next-day" aria-label="Next day">›</button>
+      </div>
+      <div role="status"><time id="day-date"></time><strong id="day-count"></strong></div>
+      <a id="github-month" href="https://github.com/Yoshioka1311?tab=overview">Open this month on GitHub</a>
+    </div>
+    <p class="source" id="source"></p>
+    <noscript><p><a href="https://github.com/Yoshioka1311?tab=overview">View the contribution calendar on GitHub</a></p></noscript>
+  </section>
+</main>
+<script id="activity-data" type="application/json">{{ACTIVITY_DATA}}</script>
+<script>
+  const { login, days, colors } = JSON.parse(document.querySelector('#activity-data').textContent);
+  const monthFormat = new Intl.DateTimeFormat('en', { month: 'short', timeZone: 'UTC' });
+  const dateFormat = new Intl.DateTimeFormat('en', { dateStyle: 'long', timeZone: 'UTC' });
+  const formatCount = count => `${count.toLocaleString('en')} contribution${count === 1 ? '' : 's'}`;
+  const utc = iso => new Date(iso + 'T00:00:00Z');
+  const scroll = document.querySelector('.chart-scroll');
+  const chart = document.querySelector('.chart');
+  const grid = document.querySelector('.days');
+  const months = document.querySelector('.months');
+  const legend = document.querySelector('.legend');
+  const ranges = [...document.querySelectorAll('.range button')];
+  const previousDay = document.querySelector('#previous-day');
+  const nextDay = document.querySelector('#next-day');
+  let visibleDays, cells, selected;
+
+  for (const color of colors) {
+    const swatch = document.createElement('span');
+    swatch.style.background = color;
+    swatch.setAttribute('aria-hidden', 'true');
+    legend.append(swatch);
+  }
+  legend.append('More');
+
+  function select(index) {
+    if (selected !== undefined && cells[selected]) {
+      cells[selected].tabIndex = -1;
+      cells[selected].setAttribute('aria-pressed', 'false');
+    }
+    selected = index;
+    cells[index].tabIndex = 0;
+    cells[index].setAttribute('aria-pressed', 'true');
+    previousDay.disabled = index === 0;
+    nextDay.disabled = index === cells.length - 1;
+    const [iso, count] = visibleDays[index];
+    const time = document.querySelector('#day-date');
+    time.dateTime = iso;
+    time.textContent = dateFormat.format(utc(iso));
+    document.querySelector('#day-count').textContent = formatCount(count);
+    const monthStart = iso.slice(0, 7) + '-01';
+    const last = utc(monthStart);
+    last.setUTCMonth(last.getUTCMonth() + 1, 0);
+    const monthEnd = last.toISOString().slice(0, 10);
+    document.querySelector('#github-month').href = `https://github.com/${login}?tab=overview&from=${monthStart}&to=${monthEnd}`;
+  }
+
+  function render(range) {
+    visibleDays = range === '90' ? days.slice(-90) : days;
+    const offset = utc(visibleDays[0][0]).getUTCDay();
+    chart.style.setProperty('--weeks', Math.ceil((visibleDays.length + offset) / 7));
+    const total = visibleDays.reduce((sum, day) => sum + day[1], 0);
+    document.querySelector('#range-total').textContent = `${formatCount(total)} over ${visibleDays.length} days`;
+    for (const button of ranges) button.setAttribute('aria-pressed', button.dataset.range === range);
+    const labels = [];
+    let lastMonth = '', lastColumn = -3;
+    cells = visibleDays.map(([iso, count, level], index) => {
+      const week = Math.floor((index + offset) / 7);
+      const month = iso.slice(0, 7);
+      if (month !== lastMonth) {
+        lastMonth = month;
+        if (week - lastColumn >= 2 && visibleDays.length - index >= 8) {
+          const label = document.createElement('span');
+          label.style.gridColumn = week + 1;
+          label.textContent = monthFormat.format(utc(iso));
+          labels.push(label);
+          lastColumn = week;
+        }
+      }
+      const cell = document.createElement('button');
+      cell.type = 'button';
+      cell.className = 'cell';
+      cell.dataset.index = index;
+      cell.dataset.active = level > 0;
+      cell.style.gridColumn = week + 1;
+      cell.style.gridRow = (index + offset) % 7 + 1;
+      cell.style.setProperty('--cell-color', colors[level]);
+      cell.style.setProperty('--delay', `${week * 24}ms`);
+      cell.title = `${dateFormat.format(utc(iso))}, ${formatCount(count)}`;
+      cell.setAttribute('aria-label', cell.title);
+      cell.setAttribute('aria-pressed', 'false');
+      cell.tabIndex = -1;
+      return cell;
+    });
+    months.replaceChildren(...labels);
+    grid.replaceChildren(...cells);
+    selected = undefined;
+    const lastActive = visibleDays.findLastIndex(day => day[1] > 0);
+    select(lastActive < 0 ? visibleDays.length - 1 : lastActive);
+    scroll.scrollLeft = scroll.scrollWidth;
+  }
+
+  grid.addEventListener('click', event => {
+    const cell = event.target.closest('.cell');
+    if (cell) select(Number(cell.dataset.index));
+  });
+  grid.addEventListener('keydown', event => {
+    const step = { ArrowLeft: -7, ArrowRight: 7, ArrowUp: -1, ArrowDown: 1 }[event.key];
+    if (step === undefined) return;
+    event.preventDefault();
+    const next = Number(event.target.dataset.index) + step;
+    if (!cells[next]) return;
+    select(next);
+    cells[next].focus({ preventScroll: true });
+    cells[next].scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  });
+
+  for (const button of ranges) button.addEventListener('click', () => render(button.dataset.range));
+  for (const [button, step] of [[previousDay, -1], [nextDay, 1]]) {
+    button.addEventListener('click', () => {
+      select(selected + step);
+      cells[selected].scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    });
+  }
+  document.querySelectorAll('[hidden]').forEach(element => { element.hidden = false; });
+  document.querySelector('#source').textContent = `GitHub's public contribution calendar through ${dateFormat.format(utc(days.at(-1)[0]))}.`;
+  render(matchMedia('(max-width: 620px)').matches ? '90' : 'year');
+</script>
+</html>
