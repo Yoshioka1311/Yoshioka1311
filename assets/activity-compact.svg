@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="380" height="312" viewBox="0 0 380 312" role="img" aria-labelledby="title desc">
   <title id="title">GitHub activity dashboard</title>
-  <desc id="desc">117 contributions between May 10, 2026 and Nov 10, 2026. Brighter green marks higher activity. 7 public repositories, 0 stars earned, and 112 indexed public commits over the past year.</desc>
+  <desc id="desc">60 contributions between May 10, 2026 and Nov 10, 2026. Brighter green marks higher activity. 5 public repositories, 0 stars earned, and 56 indexed public commits over the past year.</desc>
   <style>
     text { font-family: system-ui, sans-serif; }
     .active { animation: sweep 700ms cubic-bezier(.22,1,.36,1) var(--delay) both; }
@@ -9,7 +9,7 @@
   </style>
   <rect x=".5" y=".5" width="379" height="311" rx="12" fill="#14171B" stroke="#373C43"/>
   <text x="16" y="30" fill="#F2F2F1" font-size="15" font-weight="650">Recent 27 weeks</text>
-  <text x="364" y="30" text-anchor="end" fill="#C9CDD0" font-size="13">117 contributions</text>
+  <text x="364" y="30" text-anchor="end" fill="#C9CDD0" font-size="13">60 contributions</text>
   <text x="16" y="48" font-size="10.5" fill="#C9CDD0">May</text>
   <rect x="16" y="56" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="16" y="69" width="10" height="10" rx="2" fill="#25292D"/>
@@ -109,7 +109,7 @@
   <rect x="185" y="69" width="10" height="10" rx="2" fill="#47AF6C" class="active" style="--delay:312ms"/>
   <rect x="185" y="82" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="185" y="95" width="10" height="10" rx="2" fill="#244735" class="active" style="--delay:312ms"/>
-  <rect x="185" y="108" width="10" height="10" rx="2" fill="#80E6A0" class="active" style="--delay:312ms"/>
+  <rect x="185" y="108" width="10" height="10" rx="2" fill="#47AF6C" class="active" style="--delay:312ms"/>
   <rect x="185" y="121" width="10" height="10" rx="2" fill="#244735" class="active" style="--delay:312ms"/>
   <rect x="185" y="134" width="10" height="10" rx="2" fill="#244735" class="active" style="--delay:312ms"/>
   <rect x="198" y="56" width="10" height="10" rx="2" fill="#25292D"/>
@@ -143,8 +143,8 @@
   <rect x="237" y="134" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="250" y="56" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="250" y="69" width="10" height="10" rx="2" fill="#25292D"/>
-  <rect x="250" y="82" width="10" height="10" rx="2" fill="#80E6A0" class="active" style="--delay:432ms"/>
-  <rect x="250" y="95" width="10" height="10" rx="2" fill="#80E6A0" class="active" style="--delay:432ms"/>
+  <rect x="250" y="82" width="10" height="10" rx="2" fill="#25292D"/>
+  <rect x="250" y="95" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="250" y="108" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="250" y="121" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="250" y="134" width="10" height="10" rx="2" fill="#25292D"/>
@@ -165,7 +165,7 @@
   <rect x="276" y="134" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="289" y="56" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="289" y="69" width="10" height="10" rx="2" fill="#25292D"/>
-  <rect x="289" y="82" width="10" height="10" rx="2" fill="#80E6A0" class="active" style="--delay:504ms"/>
+  <rect x="289" y="82" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:504ms"/>
   <rect x="289" y="95" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:504ms"/>
   <rect x="289" y="108" width="10" height="10" rx="2" fill="#80E6A0" class="active" style="--delay:504ms"/>
   <rect x="289" y="121" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:504ms"/>
@@ -177,17 +177,17 @@
   <rect x="302" y="108" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="302" y="121" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="302" y="134" width="10" height="10" rx="2" fill="#25292D"/>
-  <rect x="315" y="56" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:552ms"/>
+  <rect x="315" y="56" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="315" y="69" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="315" y="82" width="10" height="10" rx="2" fill="#25292D"/>
-  <rect x="315" y="95" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:552ms"/>
+  <rect x="315" y="95" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="315" y="108" width="10" height="10" rx="2" fill="#25292D"/>
-  <rect x="315" y="121" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:552ms"/>
-  <rect x="315" y="134" width="10" height="10" rx="2" fill="#244735" class="active" style="--delay:552ms"/>
-  <rect x="328" y="56" width="10" height="10" rx="2" fill="#244735" class="active" style="--delay:576ms"/>
-  <rect x="328" y="69" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:576ms"/>
-  <rect x="328" y="82" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:576ms"/>
-  <rect x="328" y="95" width="10" height="10" rx="2" fill="#244735" class="active" style="--delay:576ms"/>
+  <rect x="315" y="121" width="10" height="10" rx="2" fill="#25292D"/>
+  <rect x="315" y="134" width="10" height="10" rx="2" fill="#25292D"/>
+  <rect x="328" y="56" width="10" height="10" rx="2" fill="#25292D"/>
+  <rect x="328" y="69" width="10" height="10" rx="2" fill="#25292D"/>
+  <rect x="328" y="82" width="10" height="10" rx="2" fill="#25292D"/>
+  <rect x="328" y="95" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="328" y="108" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="328" y="121" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="328" y="134" width="10" height="10" rx="2" fill="#25292D"/>
@@ -196,12 +196,12 @@
   <rect x="341" y="69" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="341" y="82" width="10" height="10" rx="2" fill="#244735" class="active" style="--delay:600ms"/>
   <rect x="341" y="95" width="10" height="10" rx="2" fill="#25292D"/>
-  <rect x="341" y="108" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:600ms"/>
+  <rect x="341" y="108" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="341" y="121" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="341" y="134" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="354" y="56" width="10" height="10" rx="2" fill="#25292D"/>
-  <rect x="354" y="69" width="10" height="10" rx="2" fill="#80E6A0" class="active" style="--delay:624ms"/>
-  <rect x="354" y="82" width="10" height="10" rx="2" fill="#2D7B4D" class="active" style="--delay:624ms"/>
+  <rect x="354" y="69" width="10" height="10" rx="2" fill="#47AF6C" class="active" style="--delay:624ms"/>
+  <rect x="354" y="82" width="10" height="10" rx="2" fill="#80E6A0" class="active" style="--delay:624ms"/>
   <text x="271" y="152" font-size="10.5" fill="#C9CDD0">Less</text>
   <rect x="296" y="145" width="7" height="7" rx="1.5" fill="#25292D"/>
   <rect x="305" y="145" width="7" height="7" rx="1.5" fill="#244735"/>
@@ -210,23 +210,22 @@
   <rect x="332" y="145" width="7" height="7" rx="1.5" fill="#80E6A0"/>
   <text x="364" y="152" text-anchor="end" font-size="10.5" fill="#C9CDD0">More</text>
   <path d="M16 164h348" stroke="#373C43"/>
-  <text x="16" y="190" font-size="18" font-weight="650" fill="#F2F2F1">7</text>
+  <text x="16" y="190" font-size="18" font-weight="650" fill="#F2F2F1">5</text>
   <text x="16" y="207" font-size="11.5" fill="#C9CDD0">Public repos</text>
   <text x="132" y="190" font-size="18" font-weight="650" fill="#F2F2F1">0</text>
   <text x="132" y="207" font-size="11.5" fill="#C9CDD0">Stars earned</text>
-  <text x="248" y="190" font-size="18" font-weight="650" fill="#F2F2F1">112</text>
+  <text x="248" y="190" font-size="18" font-weight="650" fill="#F2F2F1">56</text>
   <text x="248" y="207" font-size="11.5" fill="#C9CDD0">Public commits</text>
   <path d="M16 224h348" stroke="#373C43"/>
   <text x="16" y="247" font-size="13" font-weight="650" fill="#F2F2F1">Repository languages</text>
   <text x="364" y="247" text-anchor="end" font-size="11" fill="#C9CDD0">Share of code bytes</text>
-  <rect x="16.0000" y="259" width="332.2231" height="7" fill="#B8B1A4"/>
-  <rect x="348.2231" y="259" width="11.4493" height="7" fill="#7C9EAA"/>
-  <rect x="359.6724" y="259" width="4.3181" height="7" fill="#B79AAD"/>
-  <rect x="363.9905" y="259" width="0.0095" height="7" fill="#A0A97F"/>
+  <rect x="16.0000" y="259" width="347.4962" height="7" fill="#B8B1A4"/>
+  <rect x="363.4962" y="259" width="0.2876" height="7" fill="#7C9EAA"/>
+  <rect x="363.7838" y="259" width="0.2162" height="7" fill="#B79AAD"/>
   <circle cx="19" cy="287" r="3" fill="#B8B1A4"/>
-  <text x="27" y="291" font-size="11.5" fill="#C9CDD0">HTML 95.5%</text>
+  <text x="27" y="291" font-size="11.5" fill="#C9CDD0">TypeScript 99.9%</text>
   <circle cx="135" cy="287" r="3" fill="#7C9EAA"/>
-  <text x="143" y="291" font-size="11.5" fill="#C9CDD0">TypeScript 3.3%</text>
+  <text x="143" y="291" font-size="11.5" fill="#C9CDD0">CSS &lt;0.1%</text>
   <circle cx="251" cy="287" r="3" fill="#B79AAD"/>
-  <text x="259" y="291" font-size="11.5" fill="#C9CDD0">JavaScript 1.2%</text>
+  <text x="259" y="291" font-size="11.5" fill="#C9CDD0">JavaScript &lt;0.1%</text>
 </svg>
