@@ -4,6 +4,10 @@ I study Digital Science and Technology at Mahidol University. I'm drawn to compu
 
 I want to work as an AI engineer, testing models on real data and building software people can use.
 
+<p align="center">
+  <img src="./assets/hairline-devices.svg" width="430" alt="Hairline drawings of an open laptop and a phone shown in layers." />
+</p>
+
 ## GitHub dashboard
 
 <a href="https://yoshioka1311.github.io/Yoshioka1311/">
