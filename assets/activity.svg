@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="327" viewBox="0 0 760 327" role="img" aria-labelledby="title desc">
   <title id="title">GitHub activity dashboard</title>
-  <desc id="desc">60 contributions between Nov 9, 2025 and Nov 10, 2026. Brighter green marks higher activity. 5 public repositories, 0 stars earned, and 56 indexed public commits over the past year.</desc>
+  <desc id="desc">60 contributions between Nov 9, 2025 and Nov 12, 2026. Brighter green marks higher activity. 5 public repositories, 0 stars earned, and 56 indexed public commits over the past year.</desc>
   <style>
     text { font-family: system-ui, sans-serif; }
     .active { animation: sweep 700ms cubic-bezier(.22,1,.36,1) var(--delay) both; }
@@ -389,6 +389,8 @@
   <rect x="726" y="56" width="10.5" height="10.5" rx="2" fill="#25292D"/>
   <rect x="726" y="69.5" width="10.5" height="10.5" rx="2" fill="#47AF6C" class="active" style="--delay:1248ms"/>
   <rect x="726" y="83" width="10.5" height="10.5" rx="2" fill="#80E6A0" class="active" style="--delay:1248ms"/>
+  <rect x="726" y="96.5" width="10.5" height="10.5" rx="2" fill="#25292D"/>
+  <rect x="726" y="110" width="10.5" height="10.5" rx="2" fill="#25292D"/>
   <text x="643" y="167" font-size="10.5" fill="#C9CDD0">Less</text>
   <rect x="668" y="160" width="7" height="7" rx="1.5" fill="#25292D"/>
   <rect x="677" y="160" width="7" height="7" rx="1.5" fill="#244735"/>
@@ -396,7 +398,7 @@
   <rect x="695" y="160" width="7" height="7" rx="1.5" fill="#47AF6C"/>
   <rect x="704" y="160" width="7" height="7" rx="1.5" fill="#80E6A0"/>
   <text x="736" y="167" text-anchor="end" font-size="10.5" fill="#C9CDD0">More</text>
-  <text x="24" y="167" font-size="10.5" fill="#C9CDD0">Nov 9, 2025 to Nov 10, 2026</text>
+  <text x="24" y="167" font-size="10.5" fill="#C9CDD0">Nov 9, 2025 to Nov 12, 2026</text>
   <path d="M24 179h712" stroke="#373C43"/>
   <text x="24" y="205" font-size="18" font-weight="650" fill="#F2F2F1">5</text>
   <text x="24" y="222" font-size="11.5" fill="#C9CDD0">Public repos</text>
