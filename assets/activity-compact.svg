@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="380" height="312" viewBox="0 0 380 312" role="img" aria-labelledby="title desc">
   <title id="title">GitHub activity dashboard</title>
-  <desc id="desc">65 contributions between May 17, 2026 and Nov 18, 2026. Brighter green marks higher activity. 5 public repositories, 0 stars earned, and 61 indexed public commits over the past year.</desc>
+  <desc id="desc">71 contributions between May 17, 2026 and Nov 19, 2026. Brighter green marks higher activity. 6 public repositories, 0 stars earned, and 66 indexed public commits over the past year.</desc>
   <style>
     text { font-family: system-ui, sans-serif; }
     .active { animation: sweep 700ms cubic-bezier(.22,1,.36,1) var(--delay) both; }
@@ -9,7 +9,7 @@
   </style>
   <rect x=".5" y=".5" width="379" height="311" rx="12" fill="#14171B" stroke="#373C43"/>
   <text x="16" y="30" fill="#F2F2F1" font-size="15" font-weight="650">Recent 27 weeks</text>
-  <text x="364" y="30" text-anchor="end" fill="#C9CDD0" font-size="13">65 contributions</text>
+  <text x="364" y="30" text-anchor="end" fill="#C9CDD0" font-size="13">71 contributions</text>
   <text x="16" y="48" font-size="10.5" fill="#C9CDD0">May</text>
   <rect x="16" y="56" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="16" y="69" width="10" height="10" rx="2" fill="#25292D"/>
@@ -201,7 +201,8 @@
   <rect x="354" y="56" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="354" y="69" width="10" height="10" rx="2" fill="#25292D"/>
   <rect x="354" y="82" width="10" height="10" rx="2" fill="#25292D"/>
-  <rect x="354" y="95" width="10" height="10" rx="2" fill="#25292D"/>
+  <rect x="354" y="95" width="10" height="10" rx="2" fill="#80E6A0" class="active" style="--delay:624ms"/>
+  <rect x="354" y="108" width="10" height="10" rx="2" fill="#25292D"/>
   <text x="271" y="152" font-size="10.5" fill="#C9CDD0">Less</text>
   <rect x="296" y="145" width="7" height="7" rx="1.5" fill="#25292D"/>
   <rect x="305" y="145" width="7" height="7" rx="1.5" fill="#244735"/>
@@ -210,22 +211,23 @@
   <rect x="332" y="145" width="7" height="7" rx="1.5" fill="#80E6A0"/>
   <text x="364" y="152" text-anchor="end" font-size="10.5" fill="#C9CDD0">More</text>
   <path d="M16 164h348" stroke="#373C43"/>
-  <text x="16" y="190" font-size="18" font-weight="650" fill="#F2F2F1">5</text>
+  <text x="16" y="190" font-size="18" font-weight="650" fill="#F2F2F1">6</text>
   <text x="16" y="207" font-size="11.5" fill="#C9CDD0">Public repos</text>
   <text x="132" y="190" font-size="18" font-weight="650" fill="#F2F2F1">0</text>
   <text x="132" y="207" font-size="11.5" fill="#C9CDD0">Stars earned</text>
-  <text x="248" y="190" font-size="18" font-weight="650" fill="#F2F2F1">61</text>
+  <text x="248" y="190" font-size="18" font-weight="650" fill="#F2F2F1">66</text>
   <text x="248" y="207" font-size="11.5" fill="#C9CDD0">Public commits</text>
   <path d="M16 224h348" stroke="#373C43"/>
   <text x="16" y="247" font-size="13" font-weight="650" fill="#F2F2F1">Repository languages</text>
   <text x="364" y="247" text-anchor="end" font-size="11" fill="#C9CDD0">Share of code bytes</text>
-  <rect x="16.0000" y="259" width="336.4290" height="7" fill="#B8B1A4"/>
-  <rect x="352.4290" y="259" width="10.6378" height="7" fill="#7C9EAA"/>
-  <rect x="363.0668" y="259" width="0.9332" height="7" fill="#B79AAD"/>
+  <rect x="16.0000" y="259" width="316.0254" height="7" fill="#B8B1A4"/>
+  <rect x="332.0254" y="259" width="21.7208" height="7" fill="#7C9EAA"/>
+  <rect x="353.7462" y="259" width="9.9926" height="7" fill="#B79AAD"/>
+  <rect x="363.7389" y="259" width="0.2611" height="7" fill="#A0A97F"/>
   <circle cx="19" cy="287" r="3" fill="#B8B1A4"/>
-  <text x="27" y="291" font-size="11.5" fill="#C9CDD0">TypeScript 96.7%</text>
+  <text x="27" y="291" font-size="11.5" fill="#C9CDD0">TypeScript 90.8%</text>
   <circle cx="135" cy="287" r="3" fill="#7C9EAA"/>
-  <text x="143" y="291" font-size="11.5" fill="#C9CDD0">CSS 3.1%</text>
+  <text x="143" y="291" font-size="11.5" fill="#C9CDD0">JavaScript 6.2%</text>
   <circle cx="251" cy="287" r="3" fill="#B79AAD"/>
-  <text x="259" y="291" font-size="11.5" fill="#C9CDD0">JavaScript 0.3%</text>
+  <text x="259" y="291" font-size="11.5" fill="#C9CDD0">CSS 2.9%</text>
 </svg>
